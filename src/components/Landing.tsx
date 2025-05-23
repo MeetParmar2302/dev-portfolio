@@ -1,11 +1,7 @@
 "use client";
 
 import { RotatingTitle } from "@/components/RotatingTitle";
-import { Button } from "@/components/ui/button";
 import SocialLinks from "./SocialLinks";
-import { ArrowDownToLine } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 
 const Landing = () => {
   return (
