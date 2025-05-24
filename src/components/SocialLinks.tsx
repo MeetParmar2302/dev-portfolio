@@ -2,12 +2,13 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Button } from './ui/button';
+import { ExternalLink } from 'lucide-react';
 
 const SocialLinks = () => {
   return (
     <div className="mt-4 flex sm:flex-row justify-center items-center gap-6"> 
       <Button className="h-12 bg-yellow-400 text-black rounded-full px-6 py-2 text-base font-medium hover:bg-yellow-500 transition duration-300 ease-in-out asChild">
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-pointer">Download Resume</a>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-pointer flex items-center gap-2">Resume <ExternalLink className="w-4 h-4" strokeWidth={2.5} /></a>
       </Button>
       
       <div className="flex space-x-6 text-2xl">

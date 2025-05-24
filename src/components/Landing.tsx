@@ -9,7 +9,7 @@ const Landing = () => {
         <main className="sm:min-w-screen max-w-screen h-screen flex flex-col items-start lg:items-start justify-center text-center space-y-4 mx-5">
         
         {/* Name */}
-        <h1 className="text-6xl font-bold">Meet Parmar</h1>
+        <h1 className="text-5xl sm:text-6xl font-bold">Meet Parmar</h1>
     
         {/* Rotating Title */}
         <RotatingTitle />
