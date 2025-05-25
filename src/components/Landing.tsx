@@ -2,7 +2,6 @@
 
 import { RotatingTitle } from "@/components/RotatingTitle";
 import SocialLinks from "./SocialLinks";
-import Image from "next/image";
 import FloatingProfile from "./FloatingProfile";
 
 const Landing = () => {

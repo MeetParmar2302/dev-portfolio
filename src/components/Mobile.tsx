@@ -1,7 +1,6 @@
 import Landing from "@/components/Landing";
 import About from "@/components/About";
 import MobileWarning from "@/components/MobileWarning";
-import { div } from "framer-motion/client";
 
 export default function Home() {
   return (
