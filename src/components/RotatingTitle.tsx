@@ -17,7 +17,7 @@ export function RotatingTitle() {
 
   return (
     <p className="text-2xl sm:text-2xl md:text-2xl font-bold">
-      I am a{" "}
+      <span className="hidden sm:inline">I am </span>
       <AnimatePresence mode="wait">
         <motion.span
           key={index}
