@@ -1,10 +1,15 @@
-import Greeting from "@/components/Greeting";
+"use client";
 
-export default function Home() {
+import Mobile from "@/components/Mobile";
+import dynamic from "next/dynamic";
+
+const Desktop = dynamic(() => import("@/components/Desktop"), { ssr: false });
+
+export default function Page() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-black text-white px-4 text-center space-y-4">
-      <Greeting />
-      <p className="text-xl sm:text-2xl md:text-3xl font-medium">Portfolio Coming Soon 🚀</p>
-    </main>
+    <>
+      <Desktop />
+      <Mobile />
+    </>
   );
 }
