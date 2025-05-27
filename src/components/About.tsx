@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaCode, FaPencilRuler, FaServer } from 'react-icons/fa'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -14,26 +16,48 @@ const About = () => {
             Passionate about crafting solutions through code. I thrive on solving complex problems and bringing ambitious web designs to life, specializing in modern web technologies and intuitive user experiences.
             </p>
 
+            <section className="flex flex-col gap-6 justify-center items-center lg:justify-start lg:items-start pt-4">
+                {/* <h2 className="text-4xl font-bold text-yellow-400 text-center lg:text-left">Education</h2> */}
+
+                <div className="w-80 h-full lg:w-135 lg:h-30 p-4 sm:p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 shadow-lg flex items-center gap-4 hover:scale-105">
+                    {/* College Logo */}
+                    <Image src="/iiit_surat_logo.png" alt="XYZ University Logo" width={4000} height={4000} className="h-full w-20 object-contain" />
+
+                    {/* Education Text */}
+                    <div className="flex flex-col text-white">
+                    <h3 className="text-lg sm:text-xl font-bold flex items-center">
+                     BTech in Computer Science & Engineering
+                    </h3>
+                    <p className="text-xs sm:text-sm text-blue-200/60">Indian Institute of Information Technology, Surat</p>
+                    <p className="text-xs sm:text-sm text-blue-200/60">2023 - 2027</p>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="flex flex-col flex-wrap md:flex-row gap-6 justify-center items-center lg:justify-start lg:items-start pt-4">
-                <div className="w-80 h-40 p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 backdrop-blur-md shadow-lg text-white flex flex-col justify-between transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-blue-500/20 hover:bg-blue-400/10 cursor-default">
-                    <h3 className="text-xl font-bold mb-2 text-yellow-400">Frontend Development</h3>
-                    <p className="text-sm text-blue-200/60">
-                        Building responsive and interactive user interfaces using React, Next.js, and Tailwind CSS.
-                    </p>
+                {/* Frontend Dev Box */}
+                <div className="w-80 h-30 p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 shadow-lg text-white flex flex-col justify-between hover:scale-105">
+                    <h3 className="text-xl font-bold mb-2 flex items-center">
+                    <FaCode className="mr-2 text-yellow-400 scale-115" /> Frontend Development
+                    </h3>
+                    <p className="text-sm text-blue-200/60">Building responsive UIs with React, Next.js, Tailwind.</p>
                 </div>
 
-                <div className="w-80 h-40 p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 backdrop-blur-md shadow-lg text-white flex flex-col justify-between transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-blue-500/20 hover:bg-blue-400/10 cursor-default">
-                    <h3 className="text-xl font-bold mb-2 text-yellow-400">UI/UX Design</h3>
-                    <p className="text-sm text-blue-200/60">
-                        Designing intuitive and visually appealing interfaces using Figma with a focus on user experience.
-                    </p>
+                {/* UI/UX Design Box */}
+                <div className="w-80 h-30 p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 shadow-lg text-white flex flex-col justify-between hover:scale-105">
+                    <h3 className="text-xl font-bold mb-2 flex items-center">
+                    <FaPencilRuler className="mr-2 text-yellow-400" /> UI/UX Design
+                    </h3>
+                    <p className="text-sm text-blue-200/60">Designing intuitive user interfaces with Figma.</p>
                 </div>
 
-                <div className="w-80 h-40 p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 backdrop-blur-md shadow-lg text-white flex flex-col justify-between transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-blue-500/20 hover:bg-blue-400/10 cursor-default">
-                    <h3 className="text-xl font-bold mb-2 text-yellow-400">Backend & APIs</h3>
-                    <p className="text-sm text-blue-200/60">
-                        Creating performant REST APIs with Node.js, Express, and integrating databases like MongoDB and PostgreSQL.
-                    </p>
+                {/* Backend Dev Box */}
+                <div className="w-80 h-30 p-6 rounded-xl border border-blue-400/30 bg-blue-400/5 shadow-lg text-white flex flex-col justify-between hover:scale-105">
+                    <h3 className="text-xl font-bold mb-2 flex items-center">
+                    <FaServer className="mr-2 text-yellow-400" /> Backend & APIs
+                    </h3>
+                    <p className="text-sm text-blue-200/60">Creating REST APIs with Node.js, Express, MongoDB.</p>
                 </div>
             </section>
             

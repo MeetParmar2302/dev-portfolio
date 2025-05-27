@@ -134,3 +134,7 @@
 .animated-gradient {
   animation: moveGradient 3s linear infinite;
 }
+
+body{
+  overflow-x: hidden;
+}
