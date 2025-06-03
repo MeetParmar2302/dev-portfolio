@@ -21,7 +21,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <main className="sm:min-w-screen max-w-screen min-h-screen flex flex-col items-center lg:items-start justify-center text-left space-y-10 px-5">
+    <main id="projects" className="sm:min-w-screen max-w-screen min-h-screen flex flex-col items-center lg:items-start justify-center text-left space-y-10 px-5">
 
       <h1 className="text-6xl font-bold text-center transition-transform duration-300 hover:scale-105">Projects</h1>
 
