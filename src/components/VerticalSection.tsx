@@ -1,4 +1,6 @@
+import ContactForm from "./ContactForm";
 import Experience from "./Experience";
+import Footer from "./Footer";
 import ToolsAndSkills from "./ToolsAndSkills";
 
 const ThirdSection = () => {
@@ -11,10 +13,10 @@ const ThirdSection = () => {
       <Experience />
 
       {/* Contact Form */}
-      <section id="contact" className="h-screen w-screen flex items-center justify-center text-4xl font-bold">Contact Form</section>
+      <ContactForm />
 
       {/* Footer */}
-      <footer className="h-40 w-screen flex items-center justify-center text-4xl font-bold">Footer</footer>
+      <Footer />
     </div>
   );
 };

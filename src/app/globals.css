@@ -139,6 +139,10 @@ body{
   overflow-x: hidden;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 .glow-container {
   position: relative;
   min-width: 230px;
