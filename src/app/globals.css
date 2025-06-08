@@ -153,7 +153,10 @@ html {
   padding: 24px;
   border-radius: 12px;
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
+  @apply bg-blue-400/10;
+  @apply border-1;
+  @apply border-blue-400/40;
   border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
