@@ -11,9 +11,9 @@ const navigateToSection = (id: string) => {
 
 const techStack = [
   { name: "Next.js", icon: SiNextdotjs, color: "text-gray-300" },
+  { name: "TailwindCSS", icon: SiTailwindcss, color: "text-teal-400" },
   { name: "TypeScript", icon: SiTypescript, color: "text-blue-400" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-teal-400" },
-  { name: "Framer Motion", icon: SiFramer, color: "text-purple-400" },
+  { name: "Framer", icon: SiFramer, color: "text-purple-400" },
 ];
 
 const Footer = () => {
@@ -58,12 +58,12 @@ const Footer = () => {
 
         {/* Tech Stack */}
         <div className="flex flex-col items-center text-center my-5">
-          <h2 className="text-lg font-bold text-yellow-400">Built With</h2>
-          <div className="flex justify-center gap-6 mt-4">
+          <h2 className="text-lg sm:text-md font-bold text-yellow-400">Built With</h2>
+          <div className="flex justify-center gap-4 sm:gap-3 mt-3">
             {techStack.map((tech, index) => (
-              <div key={index} className="flex flex-col items-center hover:scale-110 transition-transform">
-                <tech.icon className={`w-8 h-8 ${tech.color}`} />
-                <p className="text-sm text-gray-400 mt-1">{tech.name}</p>
+              <div key={index} className="flex flex-col items-center hover:scale-105 sm:hover:scale-100 transition-transform">
+                <tech.icon className={`w-8 sm:w-6 h-8 sm:h-6 ${tech.color}`} />
+                <p className="text-sm sm:text-xs text-gray-400 mt-1">{tech.name}</p>
               </div>
             ))}
           </div>
