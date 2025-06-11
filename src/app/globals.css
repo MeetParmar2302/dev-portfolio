@@ -227,3 +227,10 @@ html {
     color: white;
   }
 }
+
+.card {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transform: perspective(1000px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg));
+  transition: transform 0.3s ease-out;
+}

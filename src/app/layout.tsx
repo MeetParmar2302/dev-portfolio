@@ -29,7 +29,7 @@ export default function RootLayout({
         className="font-sans"
         cz-shortcut-listen="true"
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
